@@ -51,7 +51,8 @@
 
 ### ✈️ Airline Management SystemJava and MySQL based desktop application to manage flight bookings, cancellations, schedules, and passenger information.### 🏛️ Smart Grievance SystemA web-based grievance management platform that allows users to submit complaints, track statuses, and enables administrators to manage and resolve issues efficiently.
 
-### 📊 Real-Time Stock Portfolio & Alert SystemSpring Boot application that tracks stock prices in real time, manages portfolios, and sends alerts based on target price conditions.
+### 🏛️ Smart Grievance System
+A web-based grievance management platform that allows users to submit complaints, track statuses, and enables administrators to manage and resolve issues efficiently.
 
 ## 📊 GitHub Stats
 
