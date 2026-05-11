@@ -43,17 +43,21 @@
 
 ## 📌 Featured Project
 
-### 📈 Equi Sense – Real-Time Stock Portfolio & Alert SystemSpring Boot application that tracks stock prices in real time, manages portfolios, and sends alerts based on target price conditions.
+### 📈 Equi Sense 
+– Real-Time Stock Portfolio & Alert SystemSpring Boot application that tracks stock prices in real time, manages portfolios, and sends alerts based on target price conditions.
 
 ## 🏆 Achived Projects
 
-### 🧳 Traveloop – AI Travel PlannerHackathon project developed for the Odoo × Parul University Hackathon 2026. Helps users create personalized itineraries, estimate trip budgets, discover attractions, and manage travel plans.
+### 🧳 Traveloop 
+– AI Travel PlannerHackathon project developed for the Odoo × Parul University Hackathon 2026. 
+Helps users create personalized itineraries, estimate trip budgets, discover attractions, and manage travel plans.
 
-### ✈️ Airline Management SystemJava and MySQL based desktop application to manage flight bookings, cancellations, schedules, and passenger information.### 🏛️ Smart Grievance SystemA web-based grievance management platform that allows users to submit complaints, track statuses, and enables administrators to manage and resolve issues efficiently.
-
+### ✈️ Airline Management System
+-Java and MySQL based desktop application to manage flight bookings, cancellations, schedules, and passenger information.
 
 ### 🏛️ Smart Grievance System
-A web-based grievance management platform that allows users to submit complaints, track statuses, and enables administrators to manage and resolve issues efficiently.
+-A web-based grievance management platform that allows users to submit complaints, track statuses, and enables administrators to manage and resolve issues efficiently.
+
 
 ## 📊 GitHub Stats
 
