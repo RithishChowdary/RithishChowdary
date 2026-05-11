@@ -9,7 +9,7 @@
 - 🏫 Parul University, Gujarat
 - 💻 Passionate about Java, Spring Boot, AI, and Back-end development
 - 🌱 Currently building real-world projects and hackathon applications
-- 📈 Interested in Software Development and DataBase Managenent
+- 📈 Interested in Software Development and DataBase Management
 - 📫 Reach me at: rithishchowdary783@gmail.com
 
 ---
