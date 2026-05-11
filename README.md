@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Rithish Chowdary</h1>
+<h1 align="center">Rithish</h1>
 <h3 align="center">B.Tech CSE (AI & Data Science) Student at Parul University</h3>
 
 ---
