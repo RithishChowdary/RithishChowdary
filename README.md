@@ -36,24 +36,22 @@
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
 
 ---
 
-## 📌 Featured Projects
+## 📌 Featured Project
 
-### ✈️ Airline Management System
-Java + MySQL based desktop application for airline reservation and booking.
+### 📈 Equi Sense – Real-Time Stock Portfolio & Alert SystemSpring Boot application that tracks stock prices in real time, manages portfolios, and sends alerts based on target price conditions.
 
-### 🧳 Traveloop – AI Travel Planner
-Hackathon project to generate itineraries, estimate budgets, and discover attractions.
+## 🏆 Achived Projects
 
-### 📈 Equi Sense
-Real-Time stock advisory and portfolio optimization platform.
+### 🧳 Traveloop – AI Travel PlannerHackathon project developed for the Odoo × Parul University Hackathon 2026. Helps users create personalized itineraries, estimate trip budgets, discover attractions, and manage travel plans.
 
----
+### ✈️ Airline Management SystemJava and MySQL based desktop application to manage flight bookings, cancellations, schedules, and passenger information.### 🏛️ Smart Grievance SystemA web-based grievance management platform that allows users to submit complaints, track statuses, and enables administrators to manage and resolve issues efficiently.
+
+### 📊 Real-Time Stock Portfolio & Alert SystemSpring Boot application that tracks stock prices in real time, manages portfolios, and sends alerts based on target price conditions.
 
 ## 📊 GitHub Stats
 
