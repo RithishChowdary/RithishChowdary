@@ -44,7 +44,7 @@
 ## 📌 Featured Project
 
 ### 📈 Equi Sense 
-– Real-Time Stock Portfolio & Alert SystemSpring Boot application that tracks stock prices in real time, manages portfolios, and sends alerts based on target price conditions.
+– Real-Time Stock Portfolio & Alert System. Spring Boot application that tracks stock prices in real time, manages portfolios, and sends alerts based on target price conditions.
 
 ## 🏆 Achived Projects
 
