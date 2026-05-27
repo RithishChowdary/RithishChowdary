@@ -56,7 +56,8 @@ Helps users create personalized itineraries, estimate trip budgets, discover att
 -Java and MySQL based desktop application to manage flight bookings, cancellations, schedules, and passenger information.
 
 ### 🏛️ Smart Grievance System
--A web-based grievance management platform that allows users to submit complaints, track statuses, and enables administrators to manage and resolve issues efficiently.
+-Designed and optimized a MySQL database schema with JPA/Hibernate for users, Hostels, Departments, complaint registration, tracking, and status updates
+-Architected and optimized the MySQL database schema, including the complaint workflow, escalation matrix, normalization up to 3NF , indexing and joins for efficient query performance.
 
 
 ## 📊 GitHub Stats
