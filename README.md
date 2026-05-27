@@ -57,6 +57,7 @@ Helps users create personalized itineraries, estimate trip budgets, discover att
 
 ### 🏛️ Smart Grievance System
 -Designed and optimized a MySQL database schema with JPA/Hibernate for users, Hostels, Departments, complaint registration, tracking, and status updates
+
 -Architected and optimized the MySQL database schema, including the complaint workflow, escalation matrix, normalization up to 3NF , indexing and joins for efficient query performance.
 
 
