@@ -53,7 +53,7 @@
 Helps users create personalized itineraries, estimate trip budgets, discover attractions, and manage travel plans.
 
 ### ✈️ Airline Management System
--Java and MySQL based desktop application to manage flight bookings, cancellations, schedules, and passenger information.
+-Developed a desktop-based Airline Management System using Core Java, Java Swing, JDBC, and MySQL, implementing OOP principles, exception handling, event-driven GUI architecture, and real-time database operations for passenger management, flight booking/cancellation, and payment tracking.
 
 ### 🏛️ Smart Grievance System
 -Designed and optimized a MySQL database schema with JPA/Hibernate for users, Hostels, Departments, complaint registration, tracking, and status updates
