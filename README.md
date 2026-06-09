@@ -67,7 +67,6 @@ Helps users create personalized itineraries, estimate trip budgets, discover att
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=RithishChowdary&layout=compact&theme=tokyonight&hide=cpp,c)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=RithishChowdary&layout=compact&theme=tokyonight&langs_count=5)
 
 ---
 
