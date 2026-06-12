@@ -38,15 +38,7 @@
 
 <p align="center">
 
-<img src="https://skillicons.dev/icons?i=java,spring,mysql,hibernate,react,js,html,git,github,docker" />
-
-</p>
-
-<p align="center">
-
-<img src="https://skillicons.dev/icons?i=postman" />
-
-</p>
+<img src="https://skillicons.dev/icons?i=java,spring,mysql,hibernate,react,js,html,git,github,docker,postman" />
 
 <p align="center">
   
