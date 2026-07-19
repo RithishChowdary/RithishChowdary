@@ -66,8 +66,8 @@
   <!-- Avatar Photo -->
   <g clip-path="url(#avatarClip)">
     <rect x="25" y="75" width="90" height="110" fill="#0D1117"/>
-    <!-- Corrected image reference path with legacy fallback -->
-    <image href="profile.png" xlink:href="profile.png" x="25" y="75" width="90" height="110" preserveAspectRatio="xMidYMid slice"/>
+    <!-- Reverted relative path to assets/profile.png for root-level path resolution -->
+   <image href="https://raw.githubusercontent.com/RithishChowdary/RithishChowdary/main/assets/profile.png" xlink:href="https://raw.githubusercontent.com/RithishChowdary/RithishChowdary/main/assets/profile.png" x="25" y="75" width="90" height="110" preserveAspectRatio="xMidYMid slice"/>
     <rect x="25" y="75" width="90" height="110" fill="none" stroke="#1E293B" stroke-width="1"/>
   </g>
   <!-- Photo frame border -->
@@ -83,7 +83,7 @@
   <!-- Identity Details -->
   <g transform="translate(135, 120)">
     <text x="0" y="0" class="badge-name">Rithish Chowdary</text>
-    <text x="0" y="18" class="badge-title">Java Backend Developer &amp; Quant Engineer</text>
+    <text x="0" y="18" class="badge-title">Backend Java Developer &amp; Quant Engineer</text>
   </g>
 
   <!-- Meta Fields Row -->
@@ -101,7 +101,7 @@
     <!-- Column 3 -->
     <g transform="translate(190, 0)">
       <text x="0" y="0" class="badge-data-lbl">SYS LOCATION</text>
-      <text x="0" y="12" class="badge-data-val" fill="#22C55E">VADODARA, INDIA</text>
+      <text x="0" y="12" class="badge-data-val" fill="#22C55E">VADODARA, GUJARAT</text>
     </g>
   </g>
 
