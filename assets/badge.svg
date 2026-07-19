@@ -1,7 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450" height="280" viewBox="0 0 450 280" role="img" aria-label="Developer ID Card">
   <title>Developer ID Badge</title>
   <defs>
-    <!-- Fonts -->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@700&amp;display=swap');
       .badge-hdr { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 11px; fill: #00C8FF; letter-spacing: 2px; }
@@ -10,7 +9,6 @@
       .badge-data-lbl { font-family: 'Inter', sans-serif; font-size: 8px; fill: #64748B; letter-spacing: 0.5px; }
       .badge-data-val { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; fill: #F8FAFC; }
       
-      /* Reflection animation */
       .shine-line {
         animation: shineSweep 4s ease-in-out infinite;
       }
@@ -20,7 +18,6 @@
       }
     </style>
 
-    <!-- Glowing Filters -->
     <filter id="badgeGlow" x="-10%" y="-10%" width="120%" height="120%">
       <feDropShadow dx="0" dy="8" stdDeviation="15" flood-color="#00C8FF" flood-opacity="0.3"/>
     </filter>
@@ -36,25 +33,25 @@
       <stop offset="100%" stop-color="#00E5FF" stop-opacity="0.5"/>
     </linearGradient>
 
-    <!-- Glass shine gradient -->
     <linearGradient id="shineGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
       <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.25"/>
       <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Avatar clip path -->
     <clipPath id="avatarClip">
       <rect x="25" y="75" width="90" height="110" rx="12" ry="12"/>
     </clipPath>
+
+    <linearGradient id="cyberHeadGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="100%" stop-color="#7B5BFF"/>
+    </linearGradient>
   </defs>
 
-  <!-- ID Badge Body -->
   <rect width="450" height="280" rx="20" fill="url(#badgeGrad)" stroke="url(#badgeBorder)" stroke-width="2.5" filter="url(#badgeGlow)"/>
 
-  <!-- Top Ribbon Branding -->
   <g transform="translate(25, 25)">
-    <!-- Tech Logo shape -->
     <rect width="24" height="24" rx="6" fill="#00C8FF"/>
     <text x="12" y="17" text-anchor="middle" fill="#0D1117" font-family="JetBrains Mono" font-size="12" font-weight="700">&lt;/&gt;</text>
     
@@ -63,54 +60,50 @@
     <circle cx="398" cy="11" r="3" fill="#22C55E"/>
   </g>
 
-  <!-- Avatar Photo -->
   <g clip-path="url(#avatarClip)">
-    <rect x="25" y="75" width="90" height="110" fill="#0D1117"/>
-    <!-- Reverted relative path to assets/profile.png for root-level path resolution -->
-   <image href="https://raw.githubusercontent.com/RithishChowdary/RithishChowdary/main/assets/profile.png" xlink:href="https://raw.githubusercontent.com/RithishChowdary/RithishChowdary/main/assets/profile.png" x="25" y="75" width="90" height="110" preserveAspectRatio="xMidYMid slice"/>
+    <rect x="25" y="75" width="90" height="110" fill="#0A111E"/>
+    
+    <g transform="translate(70, 137)" text-anchor="middle">
+      <circle cx="0" cy="-5" r="24" fill="none" stroke="#00C8FF" stroke-width="0.75" stroke-opacity="0.4"/>
+      <path d="M -18 18 C -18 7, -12 2, -6 0 C -3 3, 3 3, 6 0 C 12 2, 18 7, 18 18 Z" fill="url(#cyberHeadGrad)" opacity="0.85"/>
+      <circle cx="0" cy="-8" r="10" fill="url(#cyberHeadGrad)"/>
+      <path d="M -5 -9 L 5 -9" stroke="#0D1117" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M -3 -7 L 3 -7" stroke="#00E5FF" stroke-width="1" stroke-linecap="round"/>
+    </g>
+
     <rect x="25" y="75" width="90" height="110" fill="none" stroke="#1E293B" stroke-width="1"/>
   </g>
-  <!-- Photo frame border -->
   <rect x="25" y="75" width="90" height="110" rx="12" ry="12" fill="none" stroke="#00C8FF" stroke-width="1.5" stroke-opacity="0.5"/>
 
-  <!-- Golden Smartcard Chip -->
   <g transform="translate(135, 75)">
     <rect width="32" height="24" rx="4" fill="#F59E0B" fill-opacity="0.85" stroke="#D97706" stroke-width="1"/>
     <path d="M 0 12 L 32 12 M 16 0 L 16 24 M 8 0 L 8 24 M 24 0 L 24 24" fill="none" stroke="#78350F" stroke-width="0.75"/>
     <rect x="10" y="6" width="12" height="12" rx="2" fill="none" stroke="#78350F" stroke-width="0.75"/>
   </g>
 
-  <!-- Identity Details -->
   <g transform="translate(135, 120)">
     <text x="0" y="0" class="badge-name">Rithish Chowdary</text>
     <text x="0" y="18" class="badge-title">Backend Java Developer &amp; Quant Engineer</text>
   </g>
 
-  <!-- Meta Fields Row -->
   <g transform="translate(135, 165)">
-    <!-- Column 1 -->
     <g>
       <text x="0" y="0" class="badge-data-lbl">ROLE TYPE</text>
       <text x="0" y="12" class="badge-data-val">JAVA BACKEND</text>
     </g>
-    <!-- Column 2 -->
     <g transform="translate(95, 0)">
       <text x="0" y="0" class="badge-data-lbl">HOST DEPLOY</text>
       <text x="0" y="12" class="badge-data-val">DOCKER ENGINE</text>
     </g>
-    <!-- Column 3 -->
     <g transform="translate(190, 0)">
       <text x="0" y="0" class="badge-data-lbl">SYS LOCATION</text>
       <text x="0" y="12" class="badge-data-val" fill="#22C55E">VADODARA, GUJARAT</text>
     </g>
   </g>
 
-  <!-- Divider Line -->
   <line x1="25" y1="210" x2="425" y2="210" stroke="#1E293B" stroke-width="1.5"/>
 
-  <!-- Barcode & Serial Number (Representing system integration) -->
   <g transform="translate(25, 225)">
-    <!-- Barcode lines -->
     <g fill="#F8FAFC">
       <rect x="0" y="0" width="2" height="22"/>
       <rect x="4" y="0" width="4" height="22"/>
@@ -133,13 +126,10 @@
       <rect x="83" y="0" width="2" height="22"/>
       <rect x="87" y="0" width="1" height="22"/>
     </g>
-    <!-- Barcode label -->
     <text x="96" y="15" class="badge-data-val" font-size="9" fill="#64748B">ID: RC-991012338-ENG</text>
   </g>
 
-  <!-- Floating Holographic Shine (Overlay) -->
   <g clip-path="url(#badgeBorder)">
     <rect class="shine-line" x="-150" y="-150" width="80" height="600" fill="url(#shineGrad)"/>
   </g>
-
 </svg>
