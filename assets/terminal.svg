@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="400" viewBox="0 0 720 400" role="img" aria-label="Terminal Simulator: Backend boot sequence">
+  <title>Backend Engineer Terminal Simulator</title>
+  <defs>
+    <!-- Imports JetBrains Mono -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;display=swap');
+      .term-text { font-family: 'JetBrains Mono', Consolas, Menlo, monospace; font-size: 14px; fill: #F8FAFC; line-height: 1.6; }
+      .term-prompt { font-weight: 700; fill: #00E5FF; }
+      .term-success { font-weight: 700; fill: #22C55E; }
+      .term-info { fill: #8FA9D6; }
+      .term-warn { fill: #F59E0B; }
+      .term-comment { fill: #64748B; font-style: italic; }
+      .term-title { font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 12px; fill: #64748B; }
+    </style>
+
+    <!-- Glowing effect filters -->
+    <filter id="shadowFilter" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <linearGradient id="termGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="termStroke" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#00C8FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7B5BFF" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="720" height="400" rx="16" fill="url(#termGrad)" stroke="url(#termStroke)" stroke-width="1.5" filter="url(#shadowFilter)"/>
+
+  <!-- Window Header Bar -->
+  <rect x="1" y="1" width="718" height="36" rx="15" fill="#090D16" fill-opacity="0.9"/>
+  <!-- Traffic Light Windows Controls -->
+  <circle cx="20" cy="18" r="6" fill="#EF4444"/>
+  <circle cx="40" cy="18" r="6" fill="#F59E0B"/>
+  <circle cx="60" cy="18" r="6" fill="#10B981"/>
+  <!-- Terminal Window Title -->
+  <text x="360" y="23" text-anchor="middle" class="term-title">PS C:\Users\rithish &gt; java BackendEngineer</text>
+
+  <!-- Terminal Content Console -->
+  <g transform="translate(20, 56)" class="term-text">
+    
+    <!-- Line 1: Typing Command -->
+    <g>
+      <text x="0" y="20" class="term-prompt">PS C:\Users\rithish&gt; <tspan fill="#F8FAFC">java BackendEngineer</tspan></text>
+      <!-- Caret for typing line -->
+      <rect x="350" y="6" width="8" height="16" fill="#00E5FF" opacity="1">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+        <animate attributeName="x" values="200;350;350" keyTimes="0;0.4;1" dur="2s" fill="freeze"/>
+      </rect>
+    </g>
+
+    <!-- Line 2: Loading message -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.2;0.22;1" dur="5s" fill="freeze"/>
+      <text x="0" y="50" class="term-comment"># Initializing JVM core bootstrap processes...</text>
+    </g>
+
+    <!-- Line 3: Spring Boot Loaded -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.3;0.32;1" dur="5s" fill="freeze"/>
+      <text x="0" y="80"><tspan class="term-success">✔ [SPRING BOOT]</tspan> <tspan class="term-info">v3.3.5 Core Engine loaded successfully</tspan></text>
+    </g>
+
+    <!-- Line 4: Docker Connected -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.42;0.44;1" dur="5s" fill="freeze"/>
+      <text x="0" y="110"><tspan class="term-success">✔ [DOCKER]</tspan> <tspan class="term-info">Daemon connected container: </tspan><tspan fill="#00C8FF">rithish-quant-sandbox</tspan></text>
+    </g>
+
+    <!-- Line 5: MySQL Connected -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.54;0.56;1" dur="5s" fill="freeze"/>
+      <text x="0" y="140"><tspan class="term-success">✔ [MYSQL DB]</tspan> <tspan class="term-info">Connection pool established. Dialect: MySQL8Dialect</tspan></text>
+    </g>
+
+    <!-- Line 6: JWT Enabled -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.66;0.68;1" dur="5s" fill="freeze"/>
+      <text x="0" y="170"><tspan class="term-success">✔ [JWT SECURE]</tspan> <tspan class="term-info">Spring Security token-filter filters injected (HMAC-512)</tspan></text>
+    </g>
+
+    <!-- Line 7: Portfolio Service Started -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.78;0.8;1" dur="5s" fill="freeze"/>
+      <text x="0" y="200"><tspan class="term-success">✔ [SERVICE]</tspan> <tspan class="term-info">Portfolio Service started on port </tspan><tspan fill="#F59E0B">8080</tspan></text>
+    </g>
+
+    <!-- Line 8: System Summary Box -->
+    <g opacity="0" transform="translate(0, 220)">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.88;0.9;1" dur="5s" fill="freeze"/>
+      <rect x="0" y="10" width="680" height="75" rx="8" fill="#0A0F1D" fill-opacity="0.7" stroke="#1E293B" stroke-width="1"/>
+      <text x="20" y="35" class="term-success">● SYSTEM ONLINE</text>
+      <text x="20" y="55" class="term-info" font-size="12">Equi Sense Live Trading Module: READY | Quant Strategy Engine backtests: ACTIVE</text>
+      <text x="20" y="72" class="term-comment" font-size="11">Ready to receive client requests over WebSocket stream /ws/quotes</text>
+    </g>
+
+    <!-- Line 9: Ready Prompt -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.96;0.98;1" dur="5s" fill="freeze"/>
+      <text x="0" y="325" class="term-prompt">PS C:\Users\rithish&gt; <tspan fill="#F8FAFC">_</tspan></text>
+      <!-- Blinking caret on bottom line -->
+      <rect x="175" y="311" width="8" height="16" fill="#00E5FF">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+  </g>
+
+</svg>

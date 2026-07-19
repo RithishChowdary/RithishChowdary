@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-label="Projects Showcase Board">
+  <title>Developer Projects Board</title>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap');
+      .board-title { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 32px; fill: #FFFFFF; letter-spacing: -0.75px; }
+      .board-subtitle { font-family: 'Inter', sans-serif; font-size: 14px; fill: #94A3B8; font-weight: 400; }
+      .section-heading { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 14px; fill: #64748B; letter-spacing: 1.5px; }
+      .proj-title { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 18px; fill: #F8FAFC; letter-spacing: -0.3px; }
+      .proj-desc { font-family: 'Inter', sans-serif; font-size: 13px; fill: #94A3B8; line-height: 1.6; font-weight: 400; }
+      .proj-feature { font-family: 'Inter', sans-serif; font-size: 12.5px; fill: #CBD5E1; }
+      .tech-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; fill: #38BDF8; }
+      .badge-txt { font-family: 'JetBrains Mono', monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 0.5px; }
+      .scope-txt { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 500; fill: #38BDF8; }
+    </style>
+
+    <filter id="activeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="20" flood-color="#0EA5E9" flood-opacity="0.18"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0EA5E9" flood-opacity="0.12"/>
+    </filter>
+    
+    <filter id="completedGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B0F17"/>
+      <stop offset="50%" stop-color="#070A0F"/>
+      <stop offset="100%" stop-color="#020406"/>
+    </linearGradient>
+
+    <linearGradient id="activeCardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.98"/>
+    </linearGradient>
+
+    <linearGradient id="completedCardGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#131B2E" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0B0F19" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="activeBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#10B981"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" rx="24" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="2"/>
+
+  <g opacity="0.03">
+    <path d="M 0 100 L 1200 100 M 0 200 L 1200 200 M 0 300 L 1200 300 M 0 400 L 1200 400 M 0 500 L 1200 500 M 0 600 L 1200 600 M 0 700 L 1200 700" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M 100 0 L 100 800 M 200 0 L 200 800 M 300 0 L 300 800 M 400 0 L 400 800 M 500 0 L 500 800 M 600 0 L 600 800 M 700 0 L 700 800 M 800 0 L 800 800 M 900 0 L 900 800 M 1000 0 L 1000 800 M 1100 0 L 1100 800" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+
+  <g transform="translate(50, 55)">
+    <text x="0" y="0" class="board-title">Project Engineering Board</text>
+    <text x="0" y="26" class="board-subtitle">Production deployments, architecture design, and automated quantitative strategies</text>
+  </g>
+
+  <text x="50" y="135" class="section-heading">ACTIVE SYSTEMS</text>
+
+  <g transform="translate(50, 155)" filter="url(#activeGlow)">
+    <rect width="530" height="280" rx="16" fill="url(#activeCardGrad)" stroke="url(#activeBorder)" stroke-width="1.5"/>
+    
+    <path d="M 16 0 L 160 0 A 4 4 0 0 1 164 4 L 164 20 A 12 12 0 0 1 152 32 L 16 32 A 16 16 0 0 1 0 16 L 0 16 A 16 16 0 0 1 16 0 Z" fill="#0284C7" opacity="0.15"/>
+    <circle cx="22" cy="16" r="3.5" fill="#0EA5E9">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="34" y="20" class="badge-txt" fill="#38BDF8">ACTIVE / PRODUCTION</text>
+    
+    <text x="25" y="68" class="proj-title">InvestIND <tspan fill="#0EA5E9">📈</tspan></text>
+    <text x="25" y="90" class="proj-desc">Stock advisory and portfolio Management platform.</text>
+
+    <g transform="translate(25, 122)">
+      <g>
+        <text x="0" y="15" class="proj-feature"><tspan fill="#10B981">✓</tspan> Real-time stock &amp; portfolio tracking</text>
+        <text x="0" y="38" class="proj-feature"><tspan fill="#10B981">✓</tspan> JWT Authentication &amp; Role-based Security</text>
+        <text x="0" y="61" class="proj-feature"><tspan fill="#10B981">✓</tspan> Research report upload</text>
+      </g>
+      <g transform="translate(255, 0)">
+        <text x="0" y="15" class="proj-feature"><tspan fill="#10B981">✓</tspan> Automated alerts &amp; notifications</text>
+        <text x="0" y="38" class="proj-feature"><tspan fill="#10B981">✓</tspan> Dockerized deployment (AWS EC2)*</text>
+        <text x="0" y="61" class="proj-feature"><tspan fill="#10B981">✓</tspan> RESTful APIs with MySQL backend</text>
+      </g>
+    </g>
+
+    <g transform="translate(25, 212)">
+      <rect x="0" y="0" width="95" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <text x="47.5" y="16" text-anchor="middle" class="tech-tag">SPRING BOOT</text>
+
+      <rect x="103" y="0" width="65" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <text x="135.5" y="16" text-anchor="middle" class="tech-tag" fill="#10B981">MYSQL</text>
+
+      <rect x="176" y="0" width="70" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <text x="211" y="16" text-anchor="middle" class="tech-tag" fill="#38BDF8">DOCKER</text>
+
+      <rect x="254" y="0" width="75" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <text x="291.5" y="16" text-anchor="middle" class="tech-tag" fill="#F59E0B">REACT UI</text>
+    </g>
+
+    <line x1="25" y1="252" x2="505" y2="252" stroke="#1E293B" stroke-width="1.5"/>
+    <text x="25" y="269" class="scope-txt">➔ Future: Integration with Quantitative Trading Engine &amp; AI-powered Backtesting</text>
+  </g>
+
+  <g transform="translate(50, 465)" filter="url(#activeGlow)">
+    <rect width="530" height="280" rx="16" fill="url(#activeCardGrad)" stroke="url(#activeBorder)" stroke-width="1.5"/>
+    
+    <path d="M 16 0 L 165 0 A 4 4 0 0 1 169 4 L 169 20 A 12 12 0 0 1 157 32 L 16 32 A 16 16 0 0 1 0 16 L 0 16 A 16 16 0 0 1 16 0 Z" fill="#047857" opacity="0.15"/>
+    <circle cx="22" cy="16" r="3.5" fill="#10B981">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="34" y="20" class="badge-txt" fill="#34D399">ACTIVE / CORE ENGINE</text>
+    
+    <text x="25" y="68" class="proj-title">Quantitative Trading Engine <tspan fill="#10B981">⚙</tspan></text>
+    <text x="25" y="90" class="proj-desc">Production-grade Java engine for quantitative strategy development, backtesting.</text>
+
+    <g transform="translate(25, 122)">
+      <g>
+        <text x="0" y="15" class="proj-feature"><tspan fill="#10B981">✓</tspan> Historical data ingestion pipeline</text>
+        <text x="0" y="38" class="proj-feature"><tspan fill="#10B981">✓</tspan>  Modular TA4J strategy engine</text>
+        <text x="0" y="61" class="proj-feature"><tspan fill="#10B981">✓</tspan> Factory &amp; Registry architecture</text>
+      </g>
+      <g transform="translate(255, 0)">
+        <text x="0" y="15" class="proj-feature"><tspan fill="#10B981">✓</tspan> High-performance backtesting</text>
+        <text x="0" y="38" class="proj-feature"><tspan fill="#10B981">✓</tspan> Performance analytics &amp; reporting</text>
+        <text x="0" y="61" class="proj-feature"><tspan fill="#10B981">✓</tspan> Extensible trading framework</text>
+      </g>
+    </g>
+
+    <g transform="translate(25, 212)">
+      <rect x="0" y="0" width="65" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <text x="32.5" y="16" text-anchor="middle" class="tech-tag">JAVA 17</text>
+
+      <rect x="73" y="0" width="95" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <text x="120.5" y="16" text-anchor="middle" class="tech-tag">SPRING BOOT</text>
+
+      <rect x="176" y="0" width="60" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <text x="206" y="16" text-anchor="middle" class="tech-tag" fill="#F43F5E">TA4J</text>
+
+      <rect x="244" y="0" width="90" height="24" rx="6" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+      <text x="289" y="16" text-anchor="middle" class="tech-tag" fill="#A855F7">STATISTICS</text>
+    </g>
+
+    <line x1="25" y1="252" x2="505" y2="252" stroke="#1E293B" stroke-width="1.5"/>
+    <text x="25" y="269" class="scope-txt">➔ Future: Broker routing integrations for live execution</text>
+  </g>
+
+  <text x="620" y="135" class="section-heading">COMPLETED ARCHITECTURES</text>
+
+  <g transform="translate(620, 155)" filter="url(#completedGlow)">
+    <rect width="530" height="185" rx="16" fill="url(#completedCardGrad)" stroke="#334155" stroke-width="1"/>
+    
+    <rect x="20" y="20" width="165" height="20" rx="4" fill="#334155" opacity="0.3"/>
+    <text x="28" y="34" class="badge-txt" fill="#94A3B8">🛡 HACKATHON WINNER</text>
+    
+    <text x="20" y="72" class="proj-title">Traveloop <tspan fill="#64748B">🧳</tspan></text>
+    <text x="20" y="95" class="proj-desc">Hackathon project developed for the Odoo × Parul University Hackathon 2026.  
+</text>
+    
+    <g transform="translate(20, 142)">
+      <rect x="0" y="0" width="85" height="24" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <text x="42.5" y="16" text-anchor="middle" class="tech-tag" fill="#94A3B8">REACT SPA</text>
+
+      <rect x="93" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <text x="150.5" y="16" text-anchor="middle" class="tech-tag" fill="#94A3B8">SPRING SYSTEMS</text>
+
+      <rect x="216" y="0" width="85" height="24" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <text x="258.5" y="16" text-anchor="middle" class="tech-tag" fill="#94A3B8">AI AGENTS</text>
+    </g>
+  </g>
+
+  <g transform="translate(620, 360)" filter="url(#completedGlow)">
+    <rect width="530" height="185" rx="16" fill="url(#completedCardGrad)" stroke="#334155" stroke-width="1"/>
+    
+    <rect x="20" y="20" width="155" height="20" rx="4" fill="#334155" opacity="0.3"/>
+    <text x="28" y="34" class="badge-txt" fill="#94A3B8">🖥 DESKTOP DATABASE</text>
+    
+    <text x="20" y="72" class="proj-title">Airline Management System <tspan fill="#64748B">✈</tspan></text>
+    <text x="20" y="95" class="proj-desc">Developed a desktop-based AMS using Core Java,JDBC,and MySQL.</text>
+    
+    <g transform="translate(20, 142)">
+      <rect x="0" y="0" width="90" height="24" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <text x="45" y="16" text-anchor="middle" class="tech-tag" fill="#94A3B8">JAVA SWING</text>
+
+      <rect x="98" y="0" width="55" height="24" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <text x="125.5" y="16" text-anchor="middle" class="tech-tag" fill="#94A3B8">JDBC</text>
+
+      <rect x="161" y="0" width="80" height="24" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <text x="201" y="16" text-anchor="middle" class="tech-tag" fill="#94A3B8">MYSQL DB</text>
+    </g>
+  </g>
+
+  <g transform="translate(620, 565)" filter="url(#completedGlow)">
+    <rect width="530" height="180" rx="16" fill="url(#completedCardGrad)" stroke="#334155" stroke-width="1"/>
+    
+    <rect x="20" y="20" width="165" height="20" rx="4" fill="#334155" opacity="0.3"/>
+    <text x="28" y="34" class="badge-txt" fill="#94A3B8">⚙ DB PERFORMANCE</text>
+    
+    <text x="20" y="72" class="proj-title">Smart Grievance System <tspan fill="#64748B">🏛</tspan></text>
+    <text x="20" y="95" class="proj-desc">Designed and optimized a MySQL database schema with normalization up to 3NF.
+    </text>
+    
+    <g transform="translate(20, 138)">
+      <rect x="0" y="0" width="110" height="24" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <text x="55" y="16" text-anchor="middle" class="tech-tag" fill="#94A3B8">JPA / HIBERNATE</text>
+
+      <rect x="118" y="0" width="115" height="24" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <text x="175.5" y="16" text-anchor="middle" class="tech-tag" fill="#94A3B8">SQL TUNING</text>
+
+      <rect x="241" y="0" width="85" height="24" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <text x="283.5" y="16" text-anchor="middle" class="tech-tag" fill="#94A3B8">3NF SCHEMA</text>
+    </g>
+  </g>
+</svg>

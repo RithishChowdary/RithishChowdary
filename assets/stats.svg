@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="420" viewBox="0 0 800 420" role="img" aria-label="Developer Profile Analytics">
+  <title>Developer Analytics Dashboard</title>
+  <defs>
+    <!-- CSS styles -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap');
+      .db-title { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 20px; fill: #FFFFFF; letter-spacing: -0.5px; }
+      .db-subtitle { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #64748B; }
+      .widget-title { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 13px; fill: #94A3B8; letter-spacing: 0.5px; }
+      .stat-num { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 28px; fill: #FFFFFF; }
+      .stat-lbl { font-family: 'Inter', sans-serif; font-size: 12px; fill: #64748B; }
+      .lang-name { font-family: 'Inter', sans-serif; font-weight: 600; font-size: 12px; fill: #E2E8F0; }
+      .lang-pct { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #00E5FF; }
+      
+      /* Chart animations */
+      .grow-bar {
+        animation: scaleBar 2s ease-out forwards;
+        transform-origin: left;
+      }
+      @keyframes scaleBar {
+        from { transform: scaleX(0); }
+        to { transform: scaleX(1); }
+      }
+    </style>
+
+    <!-- Glowing effect filters -->
+    <filter id="cyanGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#00C8FF" flood-opacity="0.3"/>
+    </filter>
+
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="100%" stop-color="#070A0E"/>
+    </linearGradient>
+
+    <linearGradient id="widgetGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Body Canvas -->
+  <rect width="800" height="420" rx="16" fill="url(#bgGrad)" stroke="#1E293B" stroke-width="1.5"/>
+
+  <!-- Grid Pattern Overlay (subtle) -->
+  <g opacity="0.05">
+    <path d="M 0 50 L 800 50 M 0 100 L 800 100 M 0 150 L 800 150 M 0 200 L 800 200 M 0 250 L 800 250 M 0 300 L 800 300 M 0 350 L 800 350" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+    <path d="M 100 0 L 100 420 M 200 0 L 200 420 M 300 0 L 300 420 M 400 0 L 400 420 M 500 0 L 500 420 M 600 0 L 600 420 M 700 0 L 700 420" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  </g>
+
+  <!-- Top Navigation/Header Simulation -->
+  <g transform="translate(30, 35)">
+    <text x="0" y="0" class="db-title">Profile Analytics Core</text>
+    <text x="0" y="18" class="db-subtitle">Live system load, language indicators, &amp; engine performance logs</text>
+    
+    <!-- Status tag -->
+    <g transform="translate(620, -12)">
+      <rect width="120" height="24" rx="12" fill="#0B1428" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="16" cy="12" r="4.5" fill="#22C55E">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="28" y="16" class="db-subtitle" fill="#22C55E">ENGINE STABLE</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- WIDGET 1: CODE STATISTICS (Left)           -->
+  <!-- ========================================== -->
+  <g transform="translate(30, 90)">
+    <rect width="440" height="300" rx="12" fill="url(#widgetGrad)" stroke="#1E293B" stroke-width="1.2"/>
+    <rect width="440" height="32" rx="11" fill="#0F172A" fill-opacity="0.8"/>
+    <text x="15" y="20" class="widget-title">DEVELOPER TELEMETRY METRICS</text>
+
+    <!-- Stat Items Grid -->
+    <!-- Col 1, Row 1 -->
+    <g transform="translate(30, 60)">
+      <text x="0" y="0" class="stat-lbl">TOTAL COMMITS</text>
+      <text x="0" y="30" class="stat-num">580+</text>
+    </g>
+    <!-- Col 2, Row 1 -->
+    <g transform="translate(240, 60)">
+      <text x="0" y="0" class="stat-lbl">PROJECTS DEPLOYED</text>
+      <text x="0" y="30" class="stat-num" fill="#00C8FF">5</text>
+    </g>
+    
+    <!-- Col 1, Row 2 -->
+    <g transform="translate(30, 150)">
+      <text x="0" y="0" class="stat-lbl">PR RESOLUTION RATE</text>
+      <text x="0" y="30" class="stat-num" fill="#22C55E">98.4%</text>
+    </g>
+    <!-- Col 2, Row 2 -->
+    <g transform="translate(240, 150)">
+      <text x="0" y="0" class="stat-lbl">TOTAL CONTRIBUTION DAYS</text>
+      <text x="0" y="30" class="stat-num">240+</text>
+    </g>
+
+    <!-- Bottom system status metrics logs -->
+    <g transform="translate(30, 235)">
+      <line x1="0" y1="0" x2="380" y2="0" stroke="#1E293B" stroke-width="1"/>
+      <text x="0" y="20" class="db-subtitle">Quant backtesting CPU load: 12.4% | Thread pool: ACTIVE</text>
+      <text x="0" y="36" class="db-subtitle" fill="#22C55E">✔ Database schema mapping index verification completed</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- WIDGET 2: TECHNOLOGY RATIOS (Right)        -->
+  <!-- ========================================== -->
+  <g transform="translate(490, 90)">
+    <rect width="280" height="300" rx="12" fill="url(#widgetGrad)" stroke="#1E293B" stroke-width="1.2"/>
+    <rect width="280" height="32" rx="11" fill="#0F172A" fill-opacity="0.8"/>
+    <text x="15" y="20" class="widget-title">STACK INDEX RATIOS</text>
+
+    <!-- Language 1: Java (Primary) -->
+    <g transform="translate(20, 60)">
+      <text x="0" y="0" class="lang-name">Java / Spring</text>
+      <text x="240" y="0" text-anchor="end" class="lang-pct">60%</text>
+      <!-- Base bar -->
+      <rect x="0" y="8" width="240" height="8" rx="4" fill="#0F172A"/>
+      <!-- Value bar -->
+      <rect class="grow-bar" x="0" y="8" width="144" height="8" rx="4" fill="#00C8FF" filter="url(#cyanGlow)"/>
+    </g>
+
+    <!-- Language 2: React / JS -->
+    <g transform="translate(20, 120)">
+      <text x="0" y="0" class="lang-name">React / Javascript</text>
+      <text x="240" y="0" text-anchor="end" class="lang-pct" fill="#22C55E">25%</text>
+      <rect x="0" y="8" width="240" height="8" rx="4" fill="#0F172A"/>
+      <rect class="grow-bar" x="0" y="8" width="60" height="8" rx="4" fill="#22C55E"/>
+    </g>
+
+    <!-- Language 3: Databases / SQL -->
+    <g transform="translate(20, 180)">
+      <text x="0" y="0" class="lang-name">MySQL &amp; ORM Schema</text>
+      <text x="240" y="0" text-anchor="end" class="lang-pct" fill="#F59E0B">15%</text>
+      <rect x="0" y="8" width="240" height="8" rx="4" fill="#0F172A"/>
+      <rect class="grow-bar" x="0" y="8" width="36" height="8" rx="4" fill="#F59E0B"/>
+    </g>
+
+    <!-- Diagnostic mini chart -->
+    <g transform="translate(20, 240)">
+      <text x="0" y="0" class="db-subtitle" fill="#64748B">Live API Load graph</text>
+      <path d="M 0 40 L 40 20 L 80 35 L 120 10 L 160 30 L 200 5 L 240 15" fill="none" stroke="#00C8FF" stroke-width="2">
+        <animate attributeName="stroke-dasharray" values="0,300;300,300" dur="3s" repeatCount="1" fill="freeze"/>
+      </path>
+      <line x1="0" y1="40" x2="240" y2="40" stroke="#1E293B" stroke-width="1"/>
+    </g>
+  </g>
+
+</svg>

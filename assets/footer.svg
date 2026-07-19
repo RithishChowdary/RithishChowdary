@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="150" viewBox="0 0 1280 150" role="img" aria-label="Portfolio Footer">
+  <title>Developer Portfolio Footer</title>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap');
+      .footer-txt { font-family: 'Inter', sans-serif; font-size: 13px; fill: #94A3B8; letter-spacing: 0.5px; }
+      .footer-brand { font-family: 'Inter', sans-serif; font-weight: 700; font-size: 16px; fill: #F8FAFC; letter-spacing: -0.2px; }
+      .footer-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; fill: #00C8FF; letter-spacing: 1.5px; }
+      .copyright-txt { font-family: 'Inter', sans-serif; font-size: 11px; fill: #64748B; }
+    </style>
+
+    <linearGradient id="capsuleGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2C5364"/>
+      <stop offset="50%" stop-color="#203A43"/>
+      <stop offset="100%" stop-color="#0F2027"/>
+    </linearGradient>
+
+    <linearGradient id="waveHighlight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00C8FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00C8FF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#7B5BFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="150" fill="url(#capsuleGrad)"/>
+
+  <path d="M 0 60 Q 320 20 640 70 T 1280 40 L 1280 150 L 0 150 Z" fill="#0F2027" opacity="0.4"/>
+  <path d="M 0 80 Q 320 130 640 80 T 1280 90 L 1280 150 L 0 150 Z" fill="#203A43" opacity="0.3"/>
+  
+  <path d="M 0 75 Q 320 35 640 85 T 1280 55" fill="none" stroke="url(#waveHighlight)" stroke-width="2"/>
+  
+  <g transform="translate(640, 52)" text-anchor="middle">
+    <rect x="-18" y="-32" width="36" height="22" rx="6" fill="#0F2027" stroke="#203A43" stroke-width="1.5"/>
+    <text x="0" y="-17" fill="#00C8FF" font-family="JetBrains Mono" font-size="11" font-weight="700">&lt;/&gt;</text>
+    
+    <text x="0" y="14" class="footer-brand">Rithish Chowdary</text>
+    <text x="0" y="35" class="footer-txt">rithishchowdary783@gmail.com • Parul University B.Tech CS (AI)</text>
+    <text x="0" y="58" class="footer-tag">SPRING BOOT • TA4J • MYSQL • DOCKER</text>
+    <text x="0" y="78" class="copyright-txt">© 2026 Rithish Chowdary. All rights reserved.</text>
+  </g>
+</svg>
+
